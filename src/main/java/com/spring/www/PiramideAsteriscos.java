@@ -9,13 +9,13 @@ public class PiramideAsteriscos {
         int sentido = random.nextInt(2);
         int altura = random.nextInt(26);
 
-        if (altura < 5){
+        if (altura < 5) {
             altura = 6;
         }
 
-        if (sentido == 0){
+        if (sentido == 0) {
             System.out.println(" ");
-             System.out.println("Piramide Normal");
+            System.out.println("Piramide Normal");
             piramide1(altura);
             System.out.println(" \n" +
                     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠄⠂⠀⠁⠀⠀⠀⠀⠀⠀⠈⠈⠉⠁⠀⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n" +
@@ -146,27 +146,27 @@ public class PiramideAsteriscos {
         }
     }
 
-    public static void piramide1(int altura){
-        for(int i = 1; i <= altura; i++){
-            for (int k = 1; k <= altura - i; k++){
+    public static void piramide1(int altura) {
+        for (int i = 1; i <= altura; i++) {
+            for (int k = 1; k <= altura - i; k++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            System.out.println(" "+i);
+            System.out.println(" " + i);
         }
     }
 
-    public static void piramide2(int altura){
-        for(int i = altura; i >= 1; i--){
-            for (int k = 1; k <= altura - i; k++){
+    public static void piramide2(int altura) {
+        for (int i = altura; i >= 1; i--) {
+            for (int k = 1; k <= altura - i; k++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++){
+            for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
-            System.out.println(" "+i);
+            System.out.println(" " + i);
         }
     }
-
+}
