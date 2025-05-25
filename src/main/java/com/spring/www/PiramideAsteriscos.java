@@ -1,0 +1,50 @@
+package com.spring.www;
+
+import java.util.Random;
+
+public class PiramideAsteriscos {
+    public static void main(String[] args) {
+
+        Random random = new Random();
+        int sentido = random.nextInt(2);
+        int altura = random.nextInt(26);
+
+        if (altura < 5){
+            altura = 6;
+        }
+
+        if (sentido == 0){
+            System.out.println(" ");
+            piramide1(altura);
+            System.out.println(" ");
+        } else {
+            System.out.println(" ");
+            piramide2(altura);
+            System.out.println(" ");
+        }
+    }
+
+    public static void piramide1(int altura){
+        for(int i = 0; i <= altura; i++){
+            for (int k = 0; k <= altura - i; k++){
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println(" "+i);
+        }
+    }
+
+    public static void piramide2(int altura){
+        for(int i = altura; i >= 1; i--){
+            for (int k = 0; k <= altura - i; k++){
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++){
+                System.out.print("* ");
+            }
+            System.out.println(" "+i);
+        }
+    }
+}
