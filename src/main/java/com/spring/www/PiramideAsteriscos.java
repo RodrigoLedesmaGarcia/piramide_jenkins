@@ -15,18 +15,20 @@ public class PiramideAsteriscos {
 
         if (sentido == 0){
             System.out.println(" ");
+             System.out.println("Piramide Normal");
             piramide1(altura);
             System.out.println(" ");
         } else {
             System.out.println(" ");
+            System.out.println("Piramide de Cabeza");
             piramide2(altura);
             System.out.println(" ");
         }
     }
 
     public static void piramide1(int altura){
-        for(int i = 0; i <= altura; i++){
-            for (int k = 0; k <= altura - i; k++){
+        for(int i = 1; i <= altura; i++){
+            for (int k = 1; k <= altura - i; k++){
                 System.out.print(" ");
             }
             for (int j = 1; j <= i; j++){
@@ -38,7 +40,7 @@ public class PiramideAsteriscos {
 
     public static void piramide2(int altura){
         for(int i = altura; i >= 1; i--){
-            for (int k = 0; k <= altura - i; k++){
+            for (int k = 1; k <= altura - i; k++){
                 System.out.print(" ");
             }
             for (int j = 1; j <= i; j++){
