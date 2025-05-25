@@ -3,7 +3,7 @@ package com.spring.www;
 import java.util.Random;
 
 public class PiramideAsteriscos {
-    public static void main(String[] args) {
+    public static void main(String args) {
 
         Random random = new Random();
         int sentido = random.nextInt(2);
@@ -169,4 +169,4 @@ public class PiramideAsteriscos {
             System.out.println(" "+i);
         }
     }
-}
+
